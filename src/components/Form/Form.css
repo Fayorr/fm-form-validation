@@ -63,3 +63,73 @@ margin-bottom: 0;
     text-align: right;
     font-style: italic;
 }
+.footer{
+    font-size: .8rem;
+}
+.footer-span{
+    color: red;
+}
+@media screen and (min-width: 991px) {
+    ::root{
+        font-size: 13px;
+    }
+    .form-gl-container{
+        justify-content: center;
+        width: 45%;
+        padding: 1rem;
+    }
+input {
+    margin: .9rem 0;
+    padding: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+
+.btn-1,
+.btn-2 {
+    margin: 1rem auto;
+  
+}
+
+.btn-2 {
+    background-color: hsl(154, 59%, 51%);
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px hsl(154, 40%, 51%);
+    /* font-size: .5rem; */
+}
+
+.btn-1 {
+    background-color: hsl(248, 32%, 49%);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1rem 4rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+
+
+}
+
+.btn-1 span {
+    font-weight: 700;
+    word-spacing: .001rem;
+}
+
+.error-message {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+    text-align: right;
+    font-style: italic;
+}
+.footer{
+    padding: 0;
+    margin: 0;
+    font-size: .7rem;
+}
+}

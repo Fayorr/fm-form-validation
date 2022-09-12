@@ -52,7 +52,7 @@ const Form = () => {
         return errors;
     }
    return (
-        <div>
+        <div className="form-gl-container">
             <button className='btn-1'><span>Try it free 7 days</span>  then $20/mo. thereafter</button>
             <form className='form-container' method='POST' >
                 <div className="field-container">
@@ -97,7 +97,7 @@ const Form = () => {
                 </div>
             </form>
             <button type='submit' onClick={handleSubmit} className='btn-2'>CLAIM YOUR FREE TRIAL</button>
-            <p>By clicking the button you are agreeing to our <span>Terms and Services</span></p>
+            <p className='footer'>By clicking the button you are agreeing to our <span className='footer-span'>Terms and Services</span></p>
         </div>
    )
 }

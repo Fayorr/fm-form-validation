@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App-container">
+    <div className="app-container">
       <Text />
       <Form />
     </div>
