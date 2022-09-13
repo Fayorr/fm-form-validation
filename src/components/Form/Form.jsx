@@ -7,8 +7,7 @@ const Form = () => {
 
     const [formData, setFormData] = useState({firstname:'', lastname:'', email:'', password:''});
     const [formError, SetFormError] = useState({});
-    const [signedIn, setSignedIn] = useState(false)
-
+    const [signedIn, setSignedIn] = useState(false);
     const [hasSubmitted, setHasSubmitted] = useState(false);
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -22,10 +21,12 @@ const Form = () => {
         setHasSubmitted(true);
     }
     useEffect(() => {
-        if(Object.keys(formError) === 0 && hasSubmitted){
-            console.log(formData)
-            setSignedIn(true);
-        }
+        if (Object.keys(formError).length === 0 && hasSubmitted){
+        setFormData({ firstname: '', lastname: '', email: '', password: '' });
+        setSignedIn(true);
+        }  setTimeout(() => {
+            setSignedIn(false);
+      }, 3000);
     }, [formError])
     const validate = (values) => {
         const errors = {};
@@ -54,8 +55,11 @@ const Form = () => {
     }
    return (
         <div className="form-gl-container">
-            {signedIn && <div className='signed-in'>Signed in successfully!</div> }
+            
             <button className='btn-1'><span>Try it free 7 days</span>  then $20/mo. thereafter</button>
+
+            {signedIn && (<div className='signed-in'><p>Signed in successfully!</p></div>)}
+
             <form className='form-container' method='POST' >
                 <div className="field-container">
                     <input 

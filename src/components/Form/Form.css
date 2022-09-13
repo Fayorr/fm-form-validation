@@ -82,15 +82,40 @@ margin-bottom: 0;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
+.signed-in {
+    margin: .5rem 0;
+font-size: 1rem;
+text-align: center;
+background-color: green;
+border-radius: .5rem;
+
+
+}
 @media screen and (min-width: 991px) {
-    ::root{
-        font-size: 13px;
+    :root{
+        font-size: 15px;
     }
     .form-gl-container{
         justify-content: center;
         width: 45%;
         padding: 1rem;
     }
+    .form-container{
+        margin-top: .7rem;
+    }
+        .signed-in {
+            margin: .5rem 0 0;
+            padding: 0;
+            font-size: 1rem;
+            
+            background-color: green;
+            border-radius: .6rem;    
+        }
+        .signed-in p{
+            text-align: center;
+            padding: .9rem;
+            margin: 0;
+        }
 input {
     margin: .9rem 0;
     padding: 1rem;
@@ -120,7 +145,7 @@ input {
     background-color: hsl(248, 32%, 49%);
     font-size: .9rem;
     font-weight: 300;
-    padding: 1rem 4.1rem;
+    padding: 1rem 5.19rem;
     line-height: 1rem;
     margin-bottom: 0;
 
@@ -136,7 +161,7 @@ input {
     color: red;
     margin: 0;
     padding: 0;
-    font-size: .8rem;
+    font-size: .6rem;
     text-align: right;
     font-style: italic;
 }
