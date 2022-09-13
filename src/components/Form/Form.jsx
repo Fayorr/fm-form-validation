@@ -97,9 +97,10 @@ const Form = () => {
                     />
                     <p className="error-message">{formError.password}</p>  
                 </div>
-            </form>
             <button type='submit' onClick={handleSubmit} className='btn-2'>CLAIM YOUR FREE TRIAL</button>
             <p className='footer'>By clicking the button you are agreeing to our <span className='footer-span'>Terms and Services</span></p>
+            </form>
+
         </div>
    )
 }

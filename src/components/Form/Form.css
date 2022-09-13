@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border-radius: .3rem;
 
 }
@@ -23,6 +23,9 @@ input{
     padding: 1rem;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: .3rem;
+}
+input:focus {
+    background-color: hsl(246, 25%, 77%)b;
 }
 .btn-1, .btn-2 {
     border: none;
@@ -64,7 +67,11 @@ margin-bottom: 0;
     font-style: italic;
 }
 .footer{
-    font-size: .8rem;
+    font-size: .5rem;
+    color: hsl(246, 25%, 77%);
+    word-spacing: .09rem;
+    padding: 0;
+        margin-top: .6rem;
 }
 .footer-span{
     color: red;
@@ -135,7 +142,8 @@ input {
 }
 .footer{
     padding: 0;
-    margin: 0;
-    font-size: .7rem;
+    margin-top: .4rem;
+    font-size: .5em;
+    text-align: center;
 }
 }
