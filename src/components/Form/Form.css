@@ -102,7 +102,7 @@ input {
     background-color: hsl(154, 59%, 51%);
     display: flex;
     width: 100%;
-    padding: 1rem;
+    padding: .8rem 1rem;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 5px hsl(154, 40%, 51%);
@@ -111,18 +111,18 @@ input {
 
 .btn-1 {
     background-color: hsl(248, 32%, 49%);
-    font-size: 1.2rem;
+    font-size: .9rem;
     font-weight: 300;
-    padding: 1rem 4rem;
-    line-height: 1.5rem;
+    padding: 1rem 4.1rem;
+    line-height: 1rem;
     margin-bottom: 0;
 
 
 }
 
 .btn-1 span {
-    font-weight: 700;
-    word-spacing: .001rem;
+    font-weight: 600;
+    word-spacing: -.0301rem;
 }
 
 .error-message {
