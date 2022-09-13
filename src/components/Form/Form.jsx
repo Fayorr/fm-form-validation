@@ -30,7 +30,7 @@ const Form = () => {
     const validate = (values) => {
         const errors = {};
         const regexEmail =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*;[a-zA-Z]).{8,}$/;
+        const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
         
         if(!values.firstname){
             errors.firstname = 'First Name cannot be empty';

@@ -69,6 +69,12 @@ margin-bottom: 0;
 .footer-span{
     color: red;
 }
+.footer-span:hover, .footer-span:active{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
 @media screen and (min-width: 991px) {
     ::root{
         font-size: 13px;
