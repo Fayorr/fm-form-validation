@@ -110,9 +110,9 @@ const [showPassword, setShowPassword] = useState(false);
                         onChange={handleChange}
                         value={formData.password} 
                     />
-<span onClick={togglePassword} className="eye">{showPassword ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i>}</span>
-                    <p className="error-message">{formError.password}</p>  
+                    <span onClick={togglePassword} className="eye">{showPassword ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i>}</span>
                 </div>
+                    <p className="error-message">{formError.password}</p>  
             <button type='submit' onClick={handleSubmit} className='btn-2'>CLAIM YOUR FREE TRIAL</button>
             <p className='footer'>By clicking the button you are agreeing to our <span className='footer-span'>Terms and Services</span></p>
             </form>
