@@ -9,6 +9,11 @@ const Form = () => {
     const [formError, SetFormError] = useState({});
     const [signedIn, setSignedIn] = useState(false);
     const [hasSubmitted, setHasSubmitted] = useState(false);
+const [showPassword, setShowPassword] = useState(false);
+
+
+
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData(prevData => {
@@ -19,6 +24,12 @@ const Form = () => {
         e.preventDefault();
         SetFormError(validate(formData))
         setHasSubmitted(true);
+        setShowPassword(false)
+    }
+    const togglePassword = () => {
+        // showPassword ? <i class="fa-solid fa-eye-slash"></i> : <i class="fa-solid fa-eye"></i>
+
+        setShowPassword(prevPassword => !prevPassword)
     }
     useEffect(() => {
         if (Object.keys(formError).length === 0 && hasSubmitted){
@@ -26,11 +37,11 @@ const Form = () => {
         setSignedIn(true);
         }  setTimeout(() => {
             setSignedIn(false);
-      }, 3000);
-    }, [formError])
+      }, 3500);
+    }, [formError, hasSubmitted])
     const validate = (values) => {
         const errors = {};
-        const regexEmail =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        const regexEmail =  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
         const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
         
         if(!values.firstname){
@@ -93,12 +104,13 @@ const Form = () => {
                 </div>
                 <div className="field-container">
                     <input 
-                        type="password"
+                        type={showPassword ? 'text' : 'password'}
                         placeholder='Password'
                         name="password"
                         onChange={handleChange}
                         value={formData.password} 
                     />
+<span onClick={togglePassword} className="eye">{showPassword ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i>}</span>
                     <p className="error-message">{formError.password}</p>  
                 </div>
             <button type='submit' onClick={handleSubmit} className='btn-2'>CLAIM YOUR FREE TRIAL</button>

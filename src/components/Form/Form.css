@@ -27,6 +27,13 @@ input{
 input:focus {
     background-color: hsl(246, 25%, 77%)b;
 }
+
+.eye{
+    position: absolute;
+    top: 95.5%;
+    right: 10%;
+    cursor: pointer;
+}
 .btn-1, .btn-2 {
     border: none;
     text-align: center;
