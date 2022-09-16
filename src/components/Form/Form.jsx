@@ -102,7 +102,7 @@ const [showPassword, setShowPassword] = useState(false);
                     />
                     <p className="error-message">{formError.email}</p>
                 </div>
-                <div className="field-container">
+                <div className="field-container-password">
                     <input 
                         type={showPassword ? 'text' : 'password'}
                         placeholder='Password'
